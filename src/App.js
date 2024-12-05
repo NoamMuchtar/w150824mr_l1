@@ -7,6 +7,7 @@ import Details from './components/Details';
 import Message1 from './components/Message1';
 import Message2 from './components/Message2';
 import Message3 from './components/Message3';
+import Products from './components/Products';
 
 function App() {
   // let name = "Noam";
@@ -25,7 +26,9 @@ function App() {
         {/* <Home username={name} /> */}
         <Details />
         {/* <img className="horseImg" src={animalImageUrl} alt="Horse" /> */}
+        <Products />
       </header>
+      
       <Footer developer={developerName} />
     </div>
   );
