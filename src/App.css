@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.btn:hover{
+  color: #222;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,7 +29,17 @@
 .App-link {
   color: #61dafb;
 }
-
+.horseImg{width: 400px;}
+.navLink{
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+  margin-right: 7px;
+}
+.fa-brands{
+  margin: 6px;
+  font-size: 24px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
