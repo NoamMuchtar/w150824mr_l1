@@ -1,13 +1,15 @@
-import mylogo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Details from './components/Details';
-import Message1 from './components/Message1';
-import Message2 from './components/Message2';
-import Message3 from './components/Message3';
-import Products from './components/Products';
+import mylogo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Details from "./components/Details";
+import Message1 from "./components/Message1";
+import Message2 from "./components/Message2";
+import Message3 from "./components/Message3";
+import Products from "./components/Products";
+import Photos from "./components/Photos";
+import Users2 from "./components/Users2";
 
 function App() {
   // let name = "Noam";
@@ -17,18 +19,20 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar developer={developerName}/>
+      <Navbar developer={developerName} />
       <header className="App-header">
         {/* <h1 style={{color: "Yellow", fontSize: "44px"}}>Hello {name} {age}</h1> */}
-        <Message1 isAdmin={false}/>
+        <Message1 isAdmin={false} />
         <Message2 isAdmin={false} />
         <Message3 isAdmin={false} />
         {/* <Home username={name} /> */}
         <Details />
         {/* <img className="horseImg" src={animalImageUrl} alt="Horse" /> */}
         <Products />
+        <Users2 />
+        <Photos />
       </header>
-      
+
       <Footer developer={developerName} />
     </div>
   );
