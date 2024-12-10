@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 function Users() {
   const users = useFetch("https://jsonplaceholder.typicode.com/users");
@@ -8,7 +9,9 @@ function Users() {
       {users.length ? (
         <ul>
           {users.map((user) => (
-            <li key={user.id}>{user.name}</li>
+            <li key={user.id}>
+              <Link to={`/users/${user.id}`}>{user.name}s</Link>
+            </li>
           ))}
         </ul>
       ) : (
