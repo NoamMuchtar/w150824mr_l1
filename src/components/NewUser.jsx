@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function NewUser() {
-  let [email, setEmail] = useState("test@demo.com");
+  let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
   let register = (e) => {
@@ -20,6 +20,7 @@ function NewUser() {
           autoComplete="on"
           placeholder="israel@israeli.co.il"
           onChange={(e) => setEmail(e.target.value)}
+          value={email}
         />
         <label htmlFor="password">Password:</label>
         <input

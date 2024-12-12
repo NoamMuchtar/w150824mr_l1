@@ -35,6 +35,9 @@ function Navbar() {
             <NavLink className="nav-item nav-link" to="/users/new">
               Register
             </NavLink>
+            <NavLink className="nav-item nav-link" to="/login">
+              Login
+            </NavLink>
           </div>
         </div>
       </nav>

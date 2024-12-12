@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notfound from "./components/Notfound";
 import UserDetails from "./components/UserDetails";
 import NewUser from "./components/NewUser";
+import Login from "./components/Login";
 
 function App() {
   let name = "Noam";
@@ -35,7 +36,7 @@ function App() {
             <Route path=":id" element={<UserDetails />} />
             <Route path="new" element={<NewUser />} />
           </Route>
-
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
